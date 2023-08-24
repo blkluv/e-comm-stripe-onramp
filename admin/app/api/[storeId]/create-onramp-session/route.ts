@@ -31,14 +31,14 @@ export async function POST(
 	let clientSecret = '';
 
 	const apiKey =
-		'sk_test_51NXOHdARfU5KPLlVvSdDo9Y0zQXLkfS1vMj3AhYNU8A22W7rprb5YJTCDNfgaQeAl58yzZ8mMa3eBUD3EEWpdZiC00LD2YWcQA';
+		'pk_test_51N5TmzEC5zyE604b3qlKrdd1g56JR9th1aM2iTBDPuJiLmMC2nbwYcSiXahYi6QjNv2MhcM7hu4YZKc9zdILGxo600UGrmr0PQ';
 	const url = 'https://api.stripe.com/v1/crypto/onramp_sessions';
 
 	const requestData = new URLSearchParams();
 	requestData.append('customer_ip_address', '8.8.8.8');
 	requestData.append(
 		'wallet_addresses[solana]',
-		'bufoH37MTiMTNAfBS4VEZ94dCEwMsmeSijD2vZRShuV'
+		'2qjX4as5UsfHkjpwuoVgUCtySTHtE5SBZEbNs1MrP4rR'
 	);
 	requestData.append('destination_networks[]', 'solana');
 	requestData.append('destination_currencies[]', 'usdc');
@@ -47,7 +47,7 @@ export async function POST(
 	requestData.append('destination_amount', '10');
 	requestData.append(
 		'wallet_addresses[ethereum]',
-		'0xB00F0759DbeeF5E543Cc3E3B07A6442F5f3928a2'
+		'0xD8a9d08E189e81F4D02790D12c757e6c6a3C1c8b'
 	);
 	requestData.append('destination_networks[]', 'ethereum');
 	requestData.append('destination_currencies[]', 'usdc');
